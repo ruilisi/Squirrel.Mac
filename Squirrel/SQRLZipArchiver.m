@@ -7,8 +7,8 @@
 //
 
 #import "SQRLZipArchiver.h"
-#import <ReactiveCocoa/EXTScope.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/EXTScope.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 
 NSString * const SQRLZipArchiverErrorDomain = @"SQRLZipArchiverErrorDomain";
 NSString * const SQRLZipArchiverExitCodeErrorKey = @"SQRLZipArchiverExitCodeErrorKey";

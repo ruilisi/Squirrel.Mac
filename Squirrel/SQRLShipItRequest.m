@@ -9,7 +9,7 @@
 #import "SQRLShipItRequest.h"
 
 #import "EXTKeyPathCoding.h"
-#import <ReactiveCocoa/RACSignal+Operations.h>
+#import <ReactiveObjC/RACSignal+Operations.h>
 
 NSString * const SQRLShipItRequestErrorDomain = @"SQRLShipItRequestErrorDomain";
 
