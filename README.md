@@ -1,3 +1,11 @@
+# How to start on Mac
+
+1. brew install carthage
+2. gSI
+3. carthage update
+4. script/bootstrap
+5. script/cibuild
+
 # Squirrel
 
 Squirrel is an OS X framework focused on making application updates **as safe

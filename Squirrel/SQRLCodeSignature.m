@@ -124,6 +124,9 @@ const NSInteger SQRLCodeSignatureErrorCouldNotCreateStaticCode = -2;
 		}
 		
 		CFErrorRef validityError = NULL;
+		// CFStringRef text = NULL;
+		// SecRequirementCopyString((__bridge SecRequirementRef)self.requirement, kSecCSDefaultFlags, &text);
+		// NSLog(@"SecRequirementCopyString: %@", text);
 		result = SecStaticCodeCheckValidityWithErrors(staticCode, kSecCSCheckAllArchitectures, (__bridge SecRequirementRef)self.requirement, &validityError);
 		@onExit {
 			if (validityError != NULL) CFRelease(validityError);
