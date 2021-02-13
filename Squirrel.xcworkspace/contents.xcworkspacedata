@@ -2,13 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Carthage/Checkouts/ReactiveObjC/ReactiveObjC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Squirrel.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/Mantle/Mantle.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:External/OHHTTPStubs/OHHTTPStubs/OHHTTPStubs.xcodeproj">

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415CC76425D86FF50003103F /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415CC76325D86FF50003103F /* ReactiveObjC.framework */; };
 		533076EB17EB688300BDCCE0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D097B9BC17BB4777006C3FEB /* IOKit.framework */; };
 		534FF35B17D8E8B90020A51A /* unused-helper in Copy LoginItems */ = {isa = PBXBuildFile; fileRef = D0B1DDCB17B487D90059C355 /* unused-helper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		534FF36117D8E90A0020A51A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60CA7EA179FC4F60069F69A /* Foundation.framework */; };
@@ -154,7 +155,6 @@
 		D45F1A9518E47055005CE515 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C4909818E46DE900786EFE /* Mantle.framework */; };
 		D4ACA50118DB9F3F00EBD899 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4ACA50018DB9F3F00EBD899 /* OHHTTPStubs.framework */; };
 		D4C4909918E46DE900786EFE /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C4909818E46DE900786EFE /* Mantle.framework */; };
-		D4C4909B18E46DFE00786EFE /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C4909A18E46DFE00786EFE /* ReactiveCocoa.framework */; };
 		D4C4909E18E46E1000786EFE /* ReactiveCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D4C4909A18E46DFE00786EFE /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D4C4909F18E46E1000786EFE /* Mantle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = D4C4909818E46DE900786EFE /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F6EB2162179CFD93001108CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EB2161179CFD93001108CF /* SystemConfiguration.framework */; };
@@ -261,6 +261,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		415CC76325D86FF50003103F /* ReactiveObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		534FF36017D8E90A0020A51A /* com.github.Squirrel.TestApplication.TestService.xpc */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.github.Squirrel.TestApplication.TestService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		534FF36417D8E90A0020A51A /* TestService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestService-Info.plist"; sourceTree = "<group>"; };
 		534FF36617D8E90A0020A51A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -475,13 +476,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				415CC76425D86FF50003103F /* ReactiveObjC.framework in Frameworks */,
 				D014ABBA17B97403007D79D0 /* ServiceManagement.framework in Frameworks */,
 				F6EB2180179D0E4D001108CF /* Security.framework in Frameworks */,
 				F6EB2162179CFD93001108CF /* SystemConfiguration.framework in Frameworks */,
 				533076EB17EB688300BDCCE0 /* IOKit.framework in Frameworks */,
 				D0C22BDB179CC00E00158214 /* Cocoa.framework in Frameworks */,
 				D4C4909918E46DE900786EFE /* Mantle.framework in Frameworks */,
-				D4C4909B18E46DFE00786EFE /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,6 +786,7 @@
 		D0C22BD9179CC00E00158214 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				415CC76325D86FF50003103F /* ReactiveObjC.framework */,
 				D0AFE3941A0029A700C6048F /* Nimble.framework */,
 				D0AFE3921A00297500C6048F /* Quick.framework */,
 				D4C4909A18E46DFE00786EFE /* ReactiveCocoa.framework */,
@@ -1091,6 +1093,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1583,7 +1586,7 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/extobjc,
+					Carthage/Checkouts/ReactiveObjC/ReactiveObjC/extobjc,
 				);
 				INFOPLIST_FILE = "Squirrel/Squirrel-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
@@ -1602,7 +1605,7 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/extobjc,
+					Carthage/Checkouts/ReactiveObjC/ReactiveObjC/extobjc,
 				);
 				INFOPLIST_FILE = "Squirrel/Squirrel-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
@@ -1674,7 +1677,7 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/extobjc,
+					Carthage/Checkouts/ReactiveObjC/ReactiveObjC/extobjc,
 				);
 				INFOPLIST_FILE = "Squirrel/Squirrel-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
@@ -1725,7 +1728,7 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa/extobjc,
+					Carthage/Checkouts/ReactiveObjC/ReactiveObjC/extobjc,
 				);
 				INFOPLIST_FILE = "Squirrel/Squirrel-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.${PRODUCT_NAME:rfc1034identifier}";
